@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <!-- 1080p 标注 -->
+
+    <LinearLayout
+        android:layout_width="960px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/shafa_update_dialog_bg">
+
+        <TextView
+            android:id="@+id/shafa_update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="69px"
+            android:layout_marginTop="33px"
+            android:textColor="#CCFFFFFF"
+            android:textSize="54px"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:layout_below="@id/shafa_update_title"
+            android:layout_marginLeft="3px"
+            android:layout_marginRight="3px"
+            android:layout_marginTop="27px"
+            android:background="#4CFFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/shafa_update_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="69px"
+            android:layout_marginRight="69px"
+            android:layout_marginTop="30px"
+            android:textColor="#CCFFFFFF"
+            android:textSize="39px"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/shafa_update_content"
+            android:layout_marginLeft="69px"
+            android:layout_marginRight="69px"
+            android:layout_marginTop="33px"
+            android:background="#33FFFFFF"
+            />
+
+        <RelativeLayout
+            android:id="@+id/shafa_update_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:orientation="horizontal"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/shafa_update_confirm_button"
+                android:layout_width="410px"
+                android:layout_height="match_parent"
+                android:background="@drawable/shafa_update_button_bg"
+                android:gravity="center"
+                android:text="@string/shafa_update_confirm_button_content_string"
+                android:textColor="#CCFFFFFF"
+                android:textSize="45px"
+                />
+
+            <Button
+                android:id="@+id/shafa_update_cancel_button"
+                android:layout_width="410px"
+                android:layout_height="match_parent"
+                android:background="@drawable/shafa_update_button_bg"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/shafa_update_cancel_button_content_string"
+                android:textColor="#CCFFFFFF"
+                android:textSize="45px"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shafa_update_progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:paddingBottom="15px"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/shafa_update_progress_down_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="36px"
+                android:text="@string/shafa_update_download_content_string"
+                android:textColor="#CCFFFFFF"
+                android:textSize="36px"
+                />
+
+            <TextView
+                android:id="@+id/shafa_update_progress_down_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="39px"
+                android:textColor="#B2FFFFFF"
+                android:textSize="33px"
+                />
+
+            <ProgressBar
+                android:id="@+id/shafa_update_progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="33px"
+                android:layout_below="@id/shafa_update_progress_down_tip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12px"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/shafa_update_progress_bg"
+                />
+
+
+            <Button
+                android:id="@+id/shafa_update_hide_button"
+                android:layout_width="410px"
+                android:layout_height="100px"
+                android:layout_below="@id/shafa_update_progress_bar"
+                android:layout_marginTop="30px"
+                android:background="@drawable/shafa_update_button_bg"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/shafa_update_hide_content_string"
+                android:textColor="#CCFFFFFF"
+                android:textSize="45px"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

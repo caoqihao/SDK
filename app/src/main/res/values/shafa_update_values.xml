@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="shafa_update_title_content_string">应用更新</string>
+    <string name="shafa_update_confirm_update_button_content_string">去更新</string>
+    <string name="shafa_update_confirm_button_content_string">确定</string>
+    <string name="shafa_update_cancel_button_content_string">取消</string>
+    <string name="shafa_update_download_content_string">下载进度</string>
+    <string name="shafa_update_hide_content_string">隐藏</string>
+
+    <string name="shafa_update_title_tip_string">提示</string>
+    <string name="shafa_update_content_tip_string">请先下载安装沙发管家</string>
+
+    <!-- 弹窗的阴影背景颜色 -->
+    <color name="shafa_update_activit_background_color">#78000000</color>
+
+    <!-- 下载进度条的颜色 -->
+    <color name="shafa_update_progress_background_color">#092E54</color>
+    <color name="shafa_update_progress_secondary_color">#00000000</color>
+    <color name="shafa_update_progress_progress_color">#0cb934</color>
+    
+
+</resources>
